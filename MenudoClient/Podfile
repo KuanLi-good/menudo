@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '10.0'
+
+target 'MenudoClient' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+use_frameworks!
+
+pod 'Alamofire', '~> 5.0' 
+pod 'PusherSwift'
+pod 'PushNotifications', '~> 0.10.1' 
+end
+
+# Installing Alamofire (5.6.2)
+# Installing PushNotifications (0.10.1)
+# Installing PusherSwift (8.0.0)

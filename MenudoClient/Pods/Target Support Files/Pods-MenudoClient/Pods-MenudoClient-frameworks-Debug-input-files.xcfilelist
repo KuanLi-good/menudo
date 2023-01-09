@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-MenudoClient/Pods-MenudoClient-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework
+${BUILT_PRODUCTS_DIR}/PusherSwift/PusherSwift.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework

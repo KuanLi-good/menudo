@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1985C6BD0FDC0A3CCA7073AA /* Pods_MenudoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB456D92585B765292FDBEA0 /* Pods_MenudoClient.framework */; };
+		22D18FCF27751630007E2D01 /* MenudoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FCE27751630007E2D01 /* MenudoClient.swift */; };
+		22D18FD127751630007E2D01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FD027751630007E2D01 /* ContentView.swift */; };
+		22D18FD327751632007E2D01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D18FD227751632007E2D01 /* Assets.xcassets */; };
+		22D18FD627751632007E2D01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D18FD527751632007E2D01 /* Preview Assets.xcassets */; };
+		22D18FDD27751640007E2D01 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FDC27751640007E2D01 /* PaymentButton.swift */; };
+		22D18FE027751BFF007E2D01 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FDF27751BFF007E2D01 /* ProductCard.swift */; };
+		22D18FE327751C25007E2D01 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D18FE227751C25007E2D01 /* Product.swift */; };
+		22FF1287278357E700E995FC /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF1286278357E700E995FC /* CartView.swift */; };
+		22FF128927835C2100E995FC /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128827835C2100E995FC /* CartManager.swift */; };
+		22FF128B27835C9100E995FC /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128A27835C9100E995FC /* CartButton.swift */; };
+		22FF128D2783602400E995FC /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128C2783602400E995FC /* ProductRow.swift */; };
+		22FF1290278386F900E995FC /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF128F278386F900E995FC /* PaymentHandler.swift */; };
+		2A1A8A17290DE3A700267BA2 /* BeaconDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1A8A16290DE3A700267BA2 /* BeaconDetector.swift */; };
+		2AE0E6D82913A6410034C33C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0E6D72913A6410034C33C /* WelcomeView.swift */; };
+		2AE0E6DA2913B1720034C33C /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0E6D92913B1720034C33C /* Seller.swift */; };
+		2AE0E6DD2913B3AC0034C33C /* Servereless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0E6DC2913B3AC0034C33C /* Servereless.swift */; };
+		2AE0E6DF2914DA190034C33C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0E6DE2914DA190034C33C /* Order.swift */; };
+		2AE0E6E12915CEF10034C33C /* PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0E6E02915CEF10034C33C /* PushNotification.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22D18FCB27751630007E2D01 /* MenudoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenudoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D18FCE27751630007E2D01 /* MenudoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenudoClient.swift; sourceTree = "<group>"; };
+		22D18FD027751630007E2D01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22D18FD227751632007E2D01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22D18FD527751632007E2D01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22D18FDC27751640007E2D01 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		22D18FDF27751BFF007E2D01 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		22D18FE227751C25007E2D01 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		22FF1286278357E700E995FC /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		22FF128827835C2100E995FC /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		22FF128A27835C9100E995FC /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		22FF128C2783602400E995FC /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		22FF128E27837D1300E995FC /* MenudoClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenudoClient.entitlements; sourceTree = "<group>"; };
+		22FF128F278386F900E995FC /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		2A1A8A16290DE3A700267BA2 /* BeaconDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetector.swift; sourceTree = "<group>"; };
+		2AE0E6D72913A6410034C33C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		2AE0E6D92913B1720034C33C /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		2AE0E6DC2913B3AC0034C33C /* Servereless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servereless.swift; sourceTree = "<group>"; };
+		2AE0E6DE2914DA190034C33C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		2AE0E6E02915CEF10034C33C /* PushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotification.swift; sourceTree = "<group>"; };
+		C72B94CAF74890513CDA9370 /* Pods-MenudoClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenudoClient.release.xcconfig"; path = "Target Support Files/Pods-MenudoClient/Pods-MenudoClient.release.xcconfig"; sourceTree = "<group>"; };
+		CB456D92585B765292FDBEA0 /* Pods_MenudoClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenudoClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98023FC98E1F2A0F69FEBE9 /* Pods-MenudoClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenudoClient.debug.xcconfig"; path = "Target Support Files/Pods-MenudoClient/Pods-MenudoClient.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22D18FC827751630007E2D01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1985C6BD0FDC0A3CCA7073AA /* Pods_MenudoClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22D18FC227751630007E2D01 = {
+			isa = PBXGroup;
+			children = (
+				22D18FCD27751630007E2D01 /* MenudoClient */,
+				22D18FCC27751630007E2D01 /* Products */,
+				75743FB86920B84C9CB06142 /* Pods */,
+				5518865F11A46C1B15D8FD31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22D18FCC27751630007E2D01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FCB27751630007E2D01 /* MenudoClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D18FCD27751630007E2D01 /* MenudoClient */ = {
+			isa = PBXGroup;
+			children = (
+				2AE0E6DB2913B36A0034C33C /* Managers */,
+				22FF128E27837D1300E995FC /* MenudoClient.entitlements */,
+				22D18FCE27751630007E2D01 /* MenudoClient.swift */,
+				22D18FE4277522FC007E2D01 /* Views */,
+				22D18FDE27751BF5007E2D01 /* Components */,
+				22D18FE127751C1D007E2D01 /* Models */,
+				22D18FD227751632007E2D01 /* Assets.xcassets */,
+				22D18FD427751632007E2D01 /* Preview Content */,
+			);
+			path = MenudoClient;
+			sourceTree = "<group>";
+		};
+		22D18FD427751632007E2D01 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FD527751632007E2D01 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22D18FDE27751BF5007E2D01 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2A1A8A16290DE3A700267BA2 /* BeaconDetector.swift */,
+				22D18FDF27751BFF007E2D01 /* ProductCard.swift */,
+				22FF128A27835C9100E995FC /* CartButton.swift */,
+				22FF128C2783602400E995FC /* ProductRow.swift */,
+				22D18FDC27751640007E2D01 /* PaymentButton.swift */,
+				2AE0E6E02915CEF10034C33C /* PushNotification.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		22D18FE127751C1D007E2D01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FE227751C25007E2D01 /* Product.swift */,
+				2AE0E6DE2914DA190034C33C /* Order.swift */,
+				2AE0E6D92913B1720034C33C /* Seller.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22D18FE4277522FC007E2D01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22D18FD027751630007E2D01 /* ContentView.swift */,
+				2AE0E6D72913A6410034C33C /* WelcomeView.swift */,
+				22FF1286278357E700E995FC /* CartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2AE0E6DB2913B36A0034C33C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				22FF128827835C2100E995FC /* CartManager.swift */,
+				22FF128F278386F900E995FC /* PaymentHandler.swift */,
+				2AE0E6DC2913B3AC0034C33C /* Servereless.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5518865F11A46C1B15D8FD31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB456D92585B765292FDBEA0 /* Pods_MenudoClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75743FB86920B84C9CB06142 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E98023FC98E1F2A0F69FEBE9 /* Pods-MenudoClient.debug.xcconfig */,
+				C72B94CAF74890513CDA9370 /* Pods-MenudoClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22D18FCA27751630007E2D01 /* MenudoClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D18FD927751632007E2D01 /* Build configuration list for PBXNativeTarget "MenudoClient" */;
+			buildPhases = (
+				CAF05D1BA9DF2D9A25672204 /* [CP] Check Pods Manifest.lock */,
+				22D18FC727751630007E2D01 /* Sources */,
+				22D18FC827751630007E2D01 /* Frameworks */,
+				22D18FC927751630007E2D01 /* Resources */,
+				DDBF25B0B19E8C708AEC2EE5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MenudoClient;
+			productName = SweaterShopApp;
+			productReference = 22D18FCB27751630007E2D01 /* MenudoClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22D18FC327751630007E2D01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					22D18FCA27751630007E2D01 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 22D18FC627751630007E2D01 /* Build configuration list for PBXProject "MenudoClient" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22D18FC227751630007E2D01;
+			productRefGroup = 22D18FCC27751630007E2D01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22D18FCA27751630007E2D01 /* MenudoClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D18FC927751630007E2D01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D18FD627751632007E2D01 /* Preview Assets.xcassets in Resources */,
+				22D18FD327751632007E2D01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CAF05D1BA9DF2D9A25672204 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenudoClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBF25B0B19E8C708AEC2EE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MenudoClient/Pods-MenudoClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MenudoClient/Pods-MenudoClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MenudoClient/Pods-MenudoClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D18FC727751630007E2D01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22FF1287278357E700E995FC /* CartView.swift in Sources */,
+				22D18FDD27751640007E2D01 /* PaymentButton.swift in Sources */,
+				22D18FD127751630007E2D01 /* ContentView.swift in Sources */,
+				22D18FE327751C25007E2D01 /* Product.swift in Sources */,
+				22FF128927835C2100E995FC /* CartManager.swift in Sources */,
+				22FF1290278386F900E995FC /* PaymentHandler.swift in Sources */,
+				2A1A8A17290DE3A700267BA2 /* BeaconDetector.swift in Sources */,
+				2AE0E6D82913A6410034C33C /* WelcomeView.swift in Sources */,
+				2AE0E6E12915CEF10034C33C /* PushNotification.swift in Sources */,
+				22D18FCF27751630007E2D01 /* MenudoClient.swift in Sources */,
+				2AE0E6DA2913B1720034C33C /* Seller.swift in Sources */,
+				22FF128D2783602400E995FC /* ProductRow.swift in Sources */,
+				22FF128B27835C9100E995FC /* CartButton.swift in Sources */,
+				2AE0E6DF2914DA190034C33C /* Order.swift in Sources */,
+				22D18FE027751BFF007E2D01 /* ProductCard.swift in Sources */,
+				2AE0E6DD2913B3AC0034C33C /* Servereless.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		22D18FD727751632007E2D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22D18FD827751632007E2D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D18FDA27751632007E2D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98023FC98E1F2A0F69FEBE9 /* Pods-MenudoClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MenudoClient/MenudoClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MenudoClient/Preview Content\"";
+				DEVELOPMENT_TEAM = NAJCBSQG67;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MenudoClient/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MenudoClient;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = menudo;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = menudo;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = menudo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "menudo-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22D18FDB27751632007E2D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72B94CAF74890513CDA9370 /* Pods-MenudoClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MenudoClient/MenudoClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MenudoClient/Preview Content\"";
+				DEVELOPMENT_TEAM = NAJCBSQG67;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MenudoClient/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MenudoClient;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = menudo;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = menudo;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = menudo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "menudo-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22D18FC627751630007E2D01 /* Build configuration list for PBXProject "MenudoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D18FD727751632007E2D01 /* Debug */,
+				22D18FD827751632007E2D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D18FD927751632007E2D01 /* Build configuration list for PBXNativeTarget "MenudoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D18FDA27751632007E2D01 /* Debug */,
+				22D18FDB27751632007E2D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22D18FC327751630007E2D01 /* Project object */;
+}

@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.6.2)
+  - PusherSwift (8.0.0):
+    - ReachabilitySwift (~> 5.0)
+    - Starscream (~> 3.1)
+  - PushNotifications (0.10.12)
+  - ReachabilitySwift (5.0.0)
+  - Starscream (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0)
+  - PusherSwift
+  - PushNotifications (~> 0.10.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PusherSwift
+    - PushNotifications
+    - ReachabilitySwift
+    - Starscream
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  PusherSwift: 8f18b7beaf383e0475607ab6a3f89f477637fb21
+  PushNotifications: 1c75fbe833c53f0410de0379d7727a8239a1899a
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+
+PODFILE CHECKSUM: 1ea5e33bed9f8addf69facd448d76d5b91ea1d4c
+
+COCOAPODS: 1.11.3

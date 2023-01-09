@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (5.6.2)
+  - AWSCore (2.15.3)
+  - AWSS3 (2.15.3):
+    - AWSCore (= 2.15.3)
+  - BouncyLayout (2.3.0)
+  - PusherSwift (8.0.0):
+    - ReachabilitySwift (~> 5.0)
+    - Starscream (~> 3.1)
+  - PushNotifications (0.10.12)
+  - ReachabilitySwift (5.0.0)
+  - Starscream (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0)
+  - AWSS3 (~> 2.15.3)
+  - BouncyLayout
+  - PusherSwift
+  - PushNotifications (~> 0.10.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AWSCore
+    - AWSS3
+    - BouncyLayout
+    - PusherSwift
+    - PushNotifications
+    - ReachabilitySwift
+    - Starscream
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  AWSCore: 5a8f9d7461dbe5ea6a5473c41cf113b687e19136
+  AWSS3: 04a7e689791b382d2d1e29cda6852048e0555635
+  BouncyLayout: 946047ef4987959bc107731c665ca4fdcdef5e17
+  PusherSwift: 8f18b7beaf383e0475607ab6a3f89f477637fb21
+  PushNotifications: 1c75fbe833c53f0410de0379d7727a8239a1899a
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+
+PODFILE CHECKSUM: f3638c3ebeb1f66b7a824ac6a5468afc7830c330
+
+COCOAPODS: 1.11.3

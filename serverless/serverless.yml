@@ -1,0 +1,160 @@
+service: menudo
+
+custom:
+  secrets: ${file(secrets.json)}
+  resultTtlInSeconds: 0
+
+provider:
+  name: aws
+  # runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  environment:
+    JWT_SECRET: ${self:custom.secrets.JWT_SECRET}
+    DB: ${self:custom.secrets.DB}
+
+functions:
+  verify-token:
+    handler: auth/VerifyToken.auth
+
+  ############## AuthHandler ##############
+  login:
+    handler: auth/AuthHandler.login
+    events:
+      - http:
+          path: login
+          method: post
+          cors: true
+
+  register:
+    handler: auth/AuthHandler.register
+    events:
+      - http:
+          path: register
+          method: post
+          cors: true
+
+  me:
+    handler: auth/AuthHandler.me
+    events:
+      - http:
+          path: me
+          method: get
+          cors: true
+          authorizer: 
+            name: verify-token
+            resultTtlInSeconds: ${self:custom.resultTtlInSeconds}
+  
+  register_if_not_exist:
+    handler: auth/AuthHandler.registerIfNotExist
+    events:
+      - http:
+          path: register_if_not_exist
+          method: post
+          cors: true
+
+  edit_profile:
+    handler: auth/AuthHandler.editProfile
+    events:
+      - http:
+          path: edit_profile
+          method: put
+          cors: true
+          authorizer: 
+            name: verify-token
+            resultTtlInSeconds: ${self:custom.resultTtlInSeconds}
+            
+  ############## UserHandler ##############
+  getUsers:
+    handler: user/UserHandler.getUsers
+    events:
+      - http:
+          path: users
+          method: get
+          cors: true
+  
+  ############## ItemHandler ##############  
+  upload_item:
+    handler: item/ItemHandler.uploadItem
+    events:
+      - http:
+          path: upload_item
+          method: post
+          cors: true
+          authorizer: 
+            name: verify-token
+            resultTtlInSeconds: ${self:custom.resultTtlInSeconds}
+  
+  edit_item:
+    handler: item/ItemHandler.editItem
+    events:
+      - http:
+          path: edit_item
+          method: put
+          cors: true
+          authorizer: 
+            name: verify-token
+            resultTtlInSeconds: ${self:custom.resultTtlInSeconds}
+  
+  delete_item:
+    handler: item/ItemHandler.deleteItem
+    events:
+      - http:
+          path: delete_item/{id} # path will be domain.name.com/dev/notes/1
+          method: delete
+          cors: true
+          authorizer: 
+            name: verify-token
+            resultTtlInSeconds: ${self:custom.resultTtlInSeconds}
+  
+  get_inventory:
+    handler: item/ItemHandler.getInventory
+    events:
+      - http:
+          path: inventory/{id}
+          method: get
+          cors: true
+
+
+  ############## OrderHandler ############## 
+
+  get_order:
+      handler: item/OrderHandler.getOrder
+      events:
+        - http:
+            path: order/{id}
+            method: get
+            cors: true 
+
+  get_orders:
+    handler: item/OrderHandler.getOrdersBySeller
+    events:
+      - http:
+          path: orders
+          method: get
+          cors: true 
+          authorizer: 
+            name: verify-token
+            resultTtlInSeconds: ${self:custom.resultTtlInSeconds}
+
+  send_order:
+    handler: item/OrderHandler.sendOrder
+    events:
+      - http:
+          path: send_order
+          method: post
+          cors: true 
+    
+  complete_order:
+    handler: item/OrderHandler.completeOrder
+    events:
+      - http:
+          path: complete_order/{id}
+          method: delete
+          cors: true 
+          authorizer: 
+            name: verify-token
+            resultTtlInSeconds: ${self:custom.resultTtlInSeconds}
+                
+# plugins:
+#   - serverless-offline

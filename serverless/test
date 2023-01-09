@@ -1,0 +1,35 @@
+{
+    "name": "ron hardy",
+    "email": "ron.hardy@123.com",
+    "password": "12345678"
+}
+
+{
+    "seller": "001254.3a6cd341b8c84e76810f9777577779b9.0724",
+    "name": "String",
+    "price": "Number",
+    "description": "String"
+}
+
+{
+    "user":"001254.3a6cd341b8c84e76810f9777577779b9.0727",
+    "full_name":"String",
+    "email":"good email",
+    "uuid_major": 123,
+    "restaurant_name":"Number"
+}
+
+
+{
+    "id": "1",
+    "seller":"001254.3a6cd341b8c84e76810f9777577779b9.0727",
+    "items":["String", "String"],
+    "total_price": 123,
+    "customer":"Number"
+}
+
+{ "name": "ron hardy", "email": "ron.hardy@123.com", "password": "12345678" }
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTdmNjkwMTk4ODY0NWQ4NmI0ZjNkMCIsImlhdCI6MTY2NjcwOTEzNiwiZXhwIjoxNjY2Nzk1NTM2fQ.1la_xWGT8Go6tr_XTn7tjYSJhCRdwciWLd77zHwVbd8
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTNlOWRlNDk4ZDcxYWUyMmI4ZDk5NCIsImlhdCI6MTY2Njc0MTI5NywiZXhwIjoxNjY2ODI3Njk3fQ.3zgRRa1q9YMxkfL0JDk52eKzYVG0xshrWQzofhFRzu0

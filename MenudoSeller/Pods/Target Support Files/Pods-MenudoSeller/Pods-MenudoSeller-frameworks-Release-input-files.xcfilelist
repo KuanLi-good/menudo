@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-MenudoSeller/Pods-MenudoSeller-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework
+${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/BouncyLayout/BouncyLayout.framework
+${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework
+${BUILT_PRODUCTS_DIR}/PusherSwift/PusherSwift.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
